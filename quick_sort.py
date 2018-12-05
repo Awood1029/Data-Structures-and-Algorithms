@@ -48,18 +48,16 @@ def quick_sort(numbers, low_index, high_index):
     quick_sort(numbers, low_index, high)
     quick_sort(numbers, high+1, high_index)
 
-num_list = []
-for i in range(0, 300):
-    x = random.randint(0, 800)
-    num_list.append(x)
+
 
 # Main program to test the quicksort algorithm.
-# numbers = [12, 18, 3, 7, 32, 14, 91, 16, 8, 57]
-num_list = []
+"""num_list = []
 for i in range(0, 300):
     x = random.randint(0, 800)
-    num_list.append(x)
-print('UNSORTED:', num_list)
+    num_list.append(x)"""
 
-quick_sort(num_list, 0, len(num_list)-1)
-print('SORTED:', num_list)
+numbers = [12, 18, 3, 7, 32, 14, 91, 16, 8, 57]
+print('UNSORTED:', numbers)
+
+quick_sort(numbers, 0, len(numbers)-1)
+print('SORTED:', numbers)
